@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"github.com/daisuke8000/grpc-go-class/greet/greetpb"
 	"google.golang.org/grpc"
 	"log"
@@ -13,8 +12,6 @@ type server struct {
 }
 
 func main() {
-	fmt.Println("Hello World")
-
 	lis, err := net.Listen("tcp", "0.0.0.0:50051")
 	if err != nil {
 		log.Fatalf("Failed to listen: %v", err)
